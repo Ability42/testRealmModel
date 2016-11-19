@@ -15,6 +15,10 @@
 		7808925A1DE0BB4E00751F85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780892581DE0BB4E00751F85 /* LaunchScreen.storyboard */; };
 		780892651DE0BB4E00751F85 /* RealmTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 780892641DE0BB4E00751F85 /* RealmTestTests.m */; };
 		780892701DE0BB4E00751F85 /* RealmTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7808926F1DE0BB4E00751F85 /* RealmTestUITests.m */; };
+		780892821DE0BC8B00751F85 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 780892811DE0BC8B00751F85 /* Person.m */; };
+		780892911DE0BE0D00751F85 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 780892901DE0BE0D00751F85 /* Car.m */; };
+		780918E11DE0C9AA00844EC1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 780918E01DE0C9AA00844EC1 /* Realm.framework */; };
+		780918E21DE0C9AA00844EC1 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 780918E01DE0C9AA00844EC1 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7808928D1DE0BD3600751F85 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				780918E21DE0C9AA00844EC1 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		780892471DE0BB4E00751F85 /* RealmTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7808924B1DE0BB4E00751F85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -51,6 +69,11 @@
 		7808926B1DE0BB4E00751F85 /* RealmTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7808926F1DE0BB4E00751F85 /* RealmTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmTestUITests.m; sourceTree = "<group>"; };
 		780892711DE0BB4E00751F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		780892801DE0BC8B00751F85 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = ../Person.h; sourceTree = "<group>"; };
+		780892811DE0BC8B00751F85 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = ../Person.m; sourceTree = "<group>"; };
+		7808928F1DE0BE0D00751F85 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		780892901DE0BE0D00751F85 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		780918E01DE0C9AA00844EC1 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				780918E11DE0C9AA00844EC1 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +105,7 @@
 		7808923E1DE0BB4D00751F85 = {
 			isa = PBXGroup;
 			children = (
+				780918E01DE0C9AA00844EC1 /* Realm.framework */,
 				780892491DE0BB4E00751F85 /* RealmTest */,
 				780892631DE0BB4E00751F85 /* RealmTestTests */,
 				7808926E1DE0BB4E00751F85 /* RealmTestUITests */,
@@ -101,6 +126,10 @@
 		780892491DE0BB4E00751F85 /* RealmTest */ = {
 			isa = PBXGroup;
 			children = (
+				780892801DE0BC8B00751F85 /* Person.h */,
+				780892811DE0BC8B00751F85 /* Person.m */,
+				7808928F1DE0BE0D00751F85 /* Car.h */,
+				780892901DE0BE0D00751F85 /* Car.m */,
 				7808924D1DE0BB4E00751F85 /* AppDelegate.h */,
 				7808924E1DE0BB4E00751F85 /* AppDelegate.m */,
 				780892501DE0BB4E00751F85 /* ViewController.h */,
@@ -150,6 +179,8 @@
 				780892431DE0BB4E00751F85 /* Sources */,
 				780892441DE0BB4E00751F85 /* Frameworks */,
 				780892451DE0BB4E00751F85 /* Resources */,
+				7808928D1DE0BD3600751F85 /* Embed Frameworks */,
+				7808928E1DE0BD6800751F85 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -268,13 +299,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7808928E1DE0BD6800751F85 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		780892431DE0BB4E00751F85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				780892911DE0BE0D00751F85 /* Car.m in Sources */,
 				780892521DE0BB4E00751F85 /* ViewController.m in Sources */,
 				7808924F1DE0BB4E00751F85 /* AppDelegate.m in Sources */,
+				780892821DE0BC8B00751F85 /* Person.m in Sources */,
 				7808924C1DE0BB4E00751F85 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +471,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					Realm.framework,
+				);
 				INFOPLIST_FILE = RealmTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SP.RealmTest;
@@ -433,6 +487,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					Realm.framework,
+				);
 				INFOPLIST_FILE = RealmTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SP.RealmTest;
@@ -505,6 +564,7 @@
 				780892761DE0BB4E00751F85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		780892771DE0BB4E00751F85 /* Build configuration list for PBXNativeTarget "RealmTestTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +573,7 @@
 				780892791DE0BB4E00751F85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7808927A1DE0BB4E00751F85 /* Build configuration list for PBXNativeTarget "RealmTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +582,7 @@
 				7808927C1DE0BB4E00751F85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
